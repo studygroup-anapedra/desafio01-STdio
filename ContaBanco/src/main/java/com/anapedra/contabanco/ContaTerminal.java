@@ -25,15 +25,19 @@ public class ContaTerminal implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
          Client client = new Client();
+        System.out.println();
 
         System.out.println("Digite seu nome: ");
         client.setName(sc.nextLine());
-        System.out.println("Digite seu senha: ");
-        client.setPassword(sc.nextLine());
-
+        System.out.println("Digite seu cpf: ");
+        client.setCpf(sc.nextLine());
         clientRepository.save(client);
+
+        System.out.println();
+
+
         System.out.println("Nome: " + client.getName());
-        System.out.println("Senha: " + client.getPassword());
+        System.out.println("CPF: " + client.getCpf());
 
 
 
