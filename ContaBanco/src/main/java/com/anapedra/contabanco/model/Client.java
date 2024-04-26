@@ -1,4 +1,4 @@
-package com.anapedra.contabanco;
+package com.anapedra.contabanco.model;
 
 import jakarta.persistence.*;
 
