@@ -14,16 +14,16 @@ public class Client implements Serializable {
 
     private Long id;
     private String name;
-    private String password;
+    private String cpf;
 
     public Client() {
 
     }
 
-    public Client(Long id, String name, String password) {
+    public Client(Long id, String name, String cpf) {
         this.id = id;
         this.name = name;
-        this.password = password;
+        this.cpf = cpf;
     }
 
     public Long getId() {
@@ -42,11 +42,11 @@ public class Client implements Serializable {
         this.name = name;
     }
 
-    public String getPassword() {
-        return password;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 }
