@@ -28,6 +28,7 @@ public class Account implements Serializable {
     @Column(precision = 13, scale = 2)
     private BigDecimal balance;
 
+
     public Account() {
     }
 
@@ -86,6 +87,10 @@ public class Account implements Serializable {
 
     public void setBalance(BigDecimal balance) {
         this.balance = balance;
+    }
+
+    public void deposit(BigDecimal amount) {
+        this.balance = balance.add(amount);
     }
 
     @Override
