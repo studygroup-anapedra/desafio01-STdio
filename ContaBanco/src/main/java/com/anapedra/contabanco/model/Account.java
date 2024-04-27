@@ -15,9 +15,11 @@ public class Account implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
-    private String number;
+    private Integer number;
 
     private String agency;
+
+    private String password;
 
     @ManyToOne
     @JoinColumn(name = "clientId")
@@ -29,10 +31,11 @@ public class Account implements Serializable {
     public Account() {
     }
 
-    public Account(Long id, String number, String agency, Client client, BigDecimal balance) {
+    public Account(Long id, Integer number, String agency, String password,Client client, BigDecimal balance) {
         this.id = id;
         this.number = number;
         this.agency = agency;
+        this.password = password;
         this.client = client;
         this.balance = balance;
     }
@@ -45,11 +48,11 @@ public class Account implements Serializable {
         this.id = id;
     }
 
-    public String getNumber() {
+    public Integer getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber(Integer number) {
         this.number = number;
     }
 
@@ -59,6 +62,14 @@ public class Account implements Serializable {
 
     public void setAgency(String agency) {
         this.agency = agency;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Client getClient() {
@@ -94,8 +105,9 @@ public class Account implements Serializable {
     public String toString() {
         return "Account{" +
                 "id=" + id +
-                ", number='" + number + '\'' +
+                ", number=" + number +
                 ", agency='" + agency + '\'' +
+                ", password='" + password + '\'' +
                 ", client=" + client +
                 ", balance=" + balance +
                 '}';
