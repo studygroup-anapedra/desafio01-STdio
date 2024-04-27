@@ -144,19 +144,19 @@ Os campos em [ ] devem ser alterados pelas informações que forem inseridas pel
 
 <p>Ana Lúcia N. Lopes de Santana</P>
 
-<h2>Requisito atendidos: </h2>
-<p></P>
+<h3>Email: </h3>
+<p>anapedra.mil@gmail.com</P>
 
-<h2>Maior desafio do projeto: </h2>
+<h3>Whatsapp : </h3>
 <p>
-
+   61993347731
 </P>
 
 <h2>Maior aprendizado:</h2>
-<p></P>
+<p>Revisitar as bases </P>
 
 <h2>Principal utilidade do aprendizado adquirido nesse projeto:</h2>
-<p><P>
+<p>Me conter para não colocar mais fucionalidades e me ater apenas no  requesito<P>
 
 <h2>Próximo desafio extra dio:</h2>
 
